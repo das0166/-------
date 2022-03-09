@@ -23,6 +23,39 @@ img{
 i,em,address{
     font-style: normal;
 }
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 700px;
+    height: 500px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.modal .modal_inner .tit{
+    padding-top: 50px;
+    font-size: 30px;
+}
+.modal .modal_inner p{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
 .wrap{
     width: 1200px;
     margin: 0 auto;
@@ -206,4 +239,46 @@ header nav .gnb>li .sub>li:hover>a{
 footer{
     width: 100%;
     height: 100px;
+    background: #027302;
+    color: #fff;
+}
+footer h2{
+    padding-top: 30px;
+    float: left;
+    width: 200px;
+}
+footer .copy{
+    width: 850px;
+    float: left;
+    text-align: center;
+    word-break: break-all ;
+    font-size: 15px;
+    padding-top: 18px;
+}
+footer .fam{
+    width: 150px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+}
+footer .fam p{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background: #044d04;
+    cursor: pointer;
+}
+footer .fam p.on i{
+    display: inline-block;
+    transform: rotate(180deg);
+}
+footer .fam ul{
+    width: 100%;
+    display: none;
+}
+footer .fam ul li{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background: #7e7e7e;
 }
