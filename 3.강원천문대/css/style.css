@@ -91,3 +91,23 @@ header nav .gnb .sub>li:hover>a{
     background-color: #336bd1;
     color: #fff;
 }
+.slide{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slide .slide_pi{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+}
+.slide .slide_pi>li{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+}
