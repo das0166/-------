@@ -18,4 +18,19 @@ $(document).ready(function(){
     $(".slide .slide_pi>li").eq(slideI).siblings().fadeOut(500);
     $(".slide .slide_pi>li").eq(slideI).fadeIn(500);
     },3000);
+
+    //공지사항, 갤러리
+    $(".content .notice_gal h3").click(function(){
+        $(".content .notice_gal h3, .content .notice_gal ul").removeClass("on");
+        $(this).addClass("on");
+        $(this).next("ul").addClass("on");
+    });
+
+    //공지사항 첫번째
+    $(".notice li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+    $(".btn").click(function(){
+        $(".modal").fadeOut();
+    });
 });
