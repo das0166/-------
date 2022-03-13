@@ -20,6 +20,42 @@ img{
 body{
     color: #333;
 }
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal .modal_inner .tit{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #b3b3b3;
+}
+.modal .modal_inner p{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -72,7 +108,7 @@ header nav .gnb .sub{
     left: 0;
     top: 45px;
     background: #fff;
-    height: 160px;
+    height: 120px;
     box-sizing: border-box;
     border: 1px solid #b3b3b3;
 }
@@ -95,10 +131,170 @@ header nav .gnb .sub>li:hover a{
     position: relative;
     overflow: hidden;
 }
-.slide li{
+.slide .slide_all{
     width: 100%;
     height: 300px;
     position: absolute;
     left: 0;
+    right : 0;
+}
+.slide .slide_all>li{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+}
+.contents{
+    width: 100%;
+    height: 200px;
+}
+.contents section{
+    float: left;
+}
+.contents .notice_gal{
+    width: 500px;
+    height: 200px;
+    position:relative;
+}
+.contents .notice_gal h2{
+    position: absolute;
+    left: 0;
     top: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ccc;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+.contents .notice_gal h2.on{
+    color: #fff;
+    background-color: #3262c4;
+}
+.contents .notice_gal ul{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: none;
+}
+.contents .notice_gal ul.on{
+    display: block;
+}
+.contents .notice_gal .notice{
+    width: 100%;
+}
+.contents .notice_gal .notice>li{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+.contents .notice_gal .notice>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .notice_gal .notice>li>a:hover{
+    color: #ccc;
+}
+.contents .notice_gal .notice .day{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 12px;
+}
+.contents .notice_gal .r100{
+    left: 100px;
+}
+.contents .notice_gal .gal{
+    width: 100%;
+}
+.contents .notice_gal .gal>li{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 12px;
+    margin-top: 12px;
+    text-indent: -9999px;
+}
+.contents .notice_gal .gal>li:nth-child(1){
+    background: url(../img/gal01.jpg);
+}
+.contents .notice_gal .gal>li:nth-child(2){
+    background: url(../img/gal02.jpg);
+}
+.contents .notice_gal .gal>li:nth-child(3){
+    background: url(../img/gal03.jpg);
+}
+.contents .notice_gal .gal>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .banner_sub{
+    width: 350px;
+    height: 200px;
+}
+.contents .baro{
+    width: 350px;
+    height: 200px;
+}
+.contents .baro h2{
+    background-color: #3262c4;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 9px;
+}
+.contents .baro h3{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #b3b3b3;
+}
+.contents .baro h3 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .baro h3 a:hover{
+    background-color: #3262c4;
+    color: #fff;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: #ccc;
+}
+footer .container p{
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer .container .menu{ 
+    width: 100%;
+    height: 50px;
+}
+footer .container .menu>li{
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+footer .container .copy{
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+}
+footer .container .copy>li{
+    float: left;
+    margin-right: 10px;
 }
