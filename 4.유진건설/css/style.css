@@ -22,6 +22,37 @@ img{
 body{
     color: #333;
 }
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    background: #fff;
+    width: 700px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.modal .modal_inner .tit{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.modal .modal_inner .con{
+    padding: 10px;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
 .wrap{
     width: 1200px;
     margin: 0 auto;
@@ -36,7 +67,7 @@ header{
 header h1{
     float: left;
     width: 200px;
-    padding: 30px;
+    padding: 29px;
 }
 header nav{
     width: 700px;
@@ -144,7 +175,7 @@ header nav .gnb .sub>li:hover>a{
 }
 .contents .notice ul li{
     width: 100%;
-    height: 28px;
+    height: 27px;
     position: relative;
 }
 .contents .notice ul li a{
@@ -198,19 +229,50 @@ header nav .gnb .sub>li:hover>a{
 footer{
     width: 100%;
     height: 100px;
-    background: #746161;
+    background: #ccc;
 }
 footer .f_left{
-    width: 900px;
+    width: 1000px;
     float: left;
+    padding-left: 5px;
 }
-footer .f_left .f_menu{}
+footer .f_left .f_menu{
+    width: 100%;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
 footer .f_left .f_menu li{
     float: left;
     margin-right: 10px;
 }
-footer .f_left .copy{}
+footer .f_left .copy{
+    font-size: 13px;
+}
 footer .fam{
-    width: 300px;
+    width: 195px;
     float: left;
+    text-align: center;
+    cursor: pointer;
+}
+footer .fam p{
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    background: #b3b3b3;
+    font-weight: bold;
+}
+footer .fam ul{
+    width: 100%;
+    display: none;
+}
+footer .fam ul li{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    background: #b3b3b3;
+}
+footer .fam ul li:hover{
+    background: #ccc;
+    font-weight: bold;
 }
