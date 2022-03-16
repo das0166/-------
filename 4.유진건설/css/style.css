@@ -106,12 +106,111 @@ header nav .gnb .sub>li:hover>a{
     width: 100%;
     height: 300px;
     position: relative;
+    overflow: hidden;
+}
+.slide li{
+    width: 100%;
+    height:300px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .contents{
     width: 100%;
     height: 200px;
+    box-sizing: border-box;
+    border: 1px solid #b3b3b3;
+}
+.contents section{
+    float: left;
+    font-size: 14px;
+}
+.contents section h2{
+    width: 100px;
+    height: 30px;
+    background: #746161;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 7px;
+}
+.contents .notice{
+    width: 450px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.contents .notice ul{
+    width: 100%;
+}
+.contents .notice ul li{
+    width: 100%;
+    height: 28px;
+    position: relative;
+}
+.contents .notice ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .notice ul li a:hover{
+    background: #746161;
+    color: #fff;
+}
+.contents .notice ul li .day{
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: 13px;
+}
+.contents .gal{
+    width: 450px;
+}
+.contents .gal ul li{
+    width: 120px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.contents .gal ul li:hover{
+    opacity: .7;
+}
+.contents section img{
+    width: 120px;
+}
+.contents .baro{
+    width: 298px;
+}
+.contents .baro a{
+    width: 95%;
+    height: 40px;
+    display: block;
+    margin: 2.5%;
+    box-sizing: border-box;
+    border: 1px solid #b3b3b3;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+}
+.contents .baro a:hover{
+    background: #746161;
+    color: #fff;
 }
 footer{
     width: 100%;
     height: 100px;
+    background: #746161;
+}
+footer .f_left{
+    width: 900px;
+    float: left;
+}
+footer .f_left .f_menu{}
+footer .f_left .f_menu li{
+    float: left;
+    margin-right: 10px;
+}
+footer .f_left .copy{}
+footer .fam{
+    width: 300px;
+    float: left;
 }
