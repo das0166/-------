@@ -22,6 +22,39 @@ body{
     display: table;
     clear: both;
 }
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal .modal_inner .tit{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid #b3b3b3;
+}
+.modal .modal_inner .nae{
+    margin: 10px;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    bottom: 10px;
+    right: 10px;
+}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -105,15 +138,175 @@ header nav .gnb .sub>li:hover>a{
 .slide{
     width: 100%;
     height: 300px;
-    background: #9899;
+    position: relative;
+    overflow: hidden;
 }
-.content{
+.slide .slide_all{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.slide .slide_all>li{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+}
+.contents{
     width: 100%;
     height: 200px;
-    background: #ccc;
+}
+.contents section{
+    float: left;
+}
+.contents .no_gal{
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+.contents .no_gal h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.contents .no_gal h2.on{
+    color: #fff;
+    background: #95d1ff;
+}
+.contents .no_gal ul{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: none;
+}
+.contents .no_gal ul.on{
+    display: block;
+}
+.contents .no_gal .notice{
+    width: 100%;
+}
+.contents .no_gal .notice>li{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+.contents .no_gal .notice>li>a{
+   width: 100%;
+   height: 100%;
+   display: block;
+}
+.contents .no_gal .notice>li>a:hover{
+    color: #fff;
+    background-color: #95d1ff;
+}
+.contents .no_gal .notice .day{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 12px;
+}
+.contents .no_gal .r100{
+    left: 100px;
+}
+.contents .no_gal .gal{
+    width: 100%;
+}
+.contents .no_gal .gal>li{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+    text-indent: -99999px;
+}
+.contents .no_gal .gal>li:nth-child(1){
+    background: url(../img/gal01.jpg);
+}
+.contents .no_gal .gal>li:nth-child(2){
+    background: url(../img/gal02.jpg);
+}
+.contents .no_gal .gal>li:nth-child(3){
+    background: url(../img/gal03.jpg);
+}
+.contents .no_gal .gal>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .no_gal .gal>li:hover{
+    opacity: 0.7;
+}
+.contents .sub_banner{
+    width: 350px;
+    height: 200px;
+}
+.contents .baro{
+    width: 350px;
+    height: 200px;
+}
+.contents .baro h2{
+    color: #fff;
+    background-color: #95d1ff;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 9px;
+}
+.contents .baro h3{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    border: 1px solid #b3b3b3;
+}
+.contents .baro h3 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .baro h3 a:hover{
+    color: #fff;
+    background-color: #95d1ff;
 }
 footer{
     width: 100%;
     height: 100px;
     background: #b3b3b3;
+}
+footer p{
+    width: 200px;
+    padding-top: 30px;
+    float: left;
+}
+footer .menu{
+    width: 1000px;
+    height: 50px;
+}
+footer .menu li{
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+footer .copy{
+    width: 1000px;
+    height: 50px;
+    font-size: 13px;
+}
+footer .copy li{
+    float: left;
+    margin-left: 10px;
 }
