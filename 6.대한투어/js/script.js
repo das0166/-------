@@ -27,4 +27,8 @@ $(document).ready(function(){
     $(".btn").click(function(){
         $(".modal").fadeOut();
     });
+    $("footer .snfa h3").click(function(){
+        $("footer .snfa .fam").stop().slideToggle();
+    });
+
 });

@@ -287,26 +287,68 @@ footer{
     height: 100px;
     background: #b3b3b3;
 }
-footer p{
-    width: 200px;
-    padding-top: 30px;
+footer .co{
+    width: 800px;
+    height: 100%;
     float: left;
-}
-footer .menu{
-    width: 1000px;
-    height: 50px;
-}
-footer .menu li{
-    float: left;
-    margin-left: 10px;
-    margin-top: 15px;
 }
 footer .copy{
-    width: 1000px;
-    height: 50px;
+    width: 100%;
     font-size: 13px;
+    padding: 10px;
+  
 }
 footer .copy li{
     float: left;
-    margin-left: 10px;
+    padding-right: 10px;
+}
+footer .snfa{
+    width: 400px;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+footer .snfa .sns{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+footer .snfa .sns li{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    background: #ccc;
+    text-align: center;
+}
+footer .snfa h3{
+    width: 70%;
+    height: 24px;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+}
+footer .snfa .fam{
+    width: 70%;
+    height: 170px;
+    position: absolute;
+    left: 15%;
+    top: 73px;
+    text-align: center;
+    display: none;
+}
+footer .snfa .fam li{
+    width: 100%;
+    height: 23px;
+    background: #ccc;
+}
+footer .snfa .fam li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+footer .snfa .fam li a:hover{
+    color: #333;
+    background: #fff;
 }
