@@ -22,11 +22,43 @@ img{
 body{
     color: #333;
 }
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal .modal_inner .tit{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+.modal .modal_inner .nae{
+    padding: 10px;
+    font-size: 13px;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
 header{
     width: 200px;
     height: 650px;
     float: left;
-    background: #eee;
 }
 header h1{
     width: 200px;
@@ -85,7 +117,6 @@ header nav .gnb .sub>li:hover>a{
 .container .slide{
     width: 800px;
     height: 350px;
-    background: #ccc;
     position: relative;
 }
 .container .slide li{
@@ -113,10 +144,180 @@ header nav .gnb .sub>li:hover>a{
 .contents{
     width: 100%;
     height:200px;
-    background: #929292;
+}
+.contents section{
+    float: left;
+}
+.contents .no_gal{
+    width: 450px;
+    height: 100%;
+    position: relative;
+}
+.contents .no_gal h2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    background: #ffe0ac;
+    text-align: center;
+    cursor: pointer;
+}
+.contents .no_gal h2.on{
+    background: #ffad25;
+    color: #fff;
+}
+.contents .no_gal .l100{
+    left: 100px;
+}
+.contents .no_gal ul{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: none;
+}
+.contents .no_gal ul.on{
+    display: block;
+}
+.contents .no_gal .notice{
+    font-size: 13px;
+    width: 100%;
+}
+.contents .no_gal .notice>li{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+}
+.contents .no_gal .notice>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.contents .no_gal .notice>li>a:hover{
+    color: #fff;
+    background-color: #ffad25;
+}
+.contents .no_gal .notice .day{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    font-size: 12px;
+}
+.contents .no_gal .gal{
+    width: 100%;
+}
+.contents .no_gal .gal>li{
+    width: 130px;
+    height: 130px;
+    float: left;
+    text-indent: -99999px;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+.contents .no_gal .gal>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .no_gal .gal>li:hover{
+    opacity: .7;
+}
+.contents .no_gal .gal>li:nth-child(1){
+    background-image:url(../img/gal01.jpg);
+}
+.contents .no_gal .gal>li:nth-child(2){
+    background-image:url(../img/gal02.jpg);
+}
+.contents .no_gal .gal>li:nth-child(3){
+    background-image:url(../img/gal03.jpg);
+}
+.contents .sub_ba{
+    width: 200px;
+    height: 100%;
+    position: relative;
+}
+.contents .baro{
+    width: 150px;
+    height: 100%;
+}
+.contents .baro h2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    background: #ffad25;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.contents .baro ul{
+    width: 100%;
+    height: 170px;
+    margin-top: 5px;
+}
+.contents .baro ul li{
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+    background: #ffe0ac;
+}
+.contents .baro ul li:hover{
+    background: #ffad25;
+    color: #fff;
+    font-weight: bold;
+}
+.contents .baro ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 footer{
     width: 100%;
     height: 100px;
     background: #ccc;
+}
+footer p{
+    width: 200px;
+    height: 40px;
+    float: left;
+    margin-top: 30px;
+}
+footer .menu{
+    height: 50px;
+    width: 600px;
+    float: right;
+}
+footer .menu>ul{
+    width: 100%;
+    line-height: 50px;
+}
+footer .menu>ul>li{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+footer .menu>ul>li:hover{
+    font-weight: bold;
+}
+footer .menu>ul>li>a{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+footer .copy{
+    height: 50px;
+    width: 600px;
+    float: right;
+    
+}
+footer .copy>ul{
+    font-size: 10px;
+}
+footer .copy>ul>li{
+    float: left;
+    padding-left: 10px;
 }
