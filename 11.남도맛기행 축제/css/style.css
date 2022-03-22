@@ -1,0 +1,103 @@
+/* #3b4f67 - 주조색 #8ba3c0 - 보조색 #b3b3b3 - 그레이 #6c6c6c - 진한 그레이*/
+*{
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+body{
+    color: #333;
+    background: #fff;
+}
+header{
+    width: 200px;
+    height: 650px;
+    float: left;
+    background: #ccd8e7;
+}
+header h1{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+header nav{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+header nav .gnb{
+   width: 100%;
+}
+header nav .gnb>li{
+    width: 100%;
+    position: relative;
+}
+header nav .gnb>li:hover>a{
+    background: #3b4f67;
+    color: #fff;
+}
+header nav .gnb>li>a{
+    font-size: 20px;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background: #8ba3c0;
+    font-weight: bold;
+}
+header nav .gnb .sub{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: 1;
+    display: none;
+}
+header nav .gnb .sub>li{
+    width: 100%;
+}
+header nav .gnb .sub>li:hover>a{
+    color: #000;
+    font-weight: bold;
+    background: #8ba3c0;
+}
+header nav .gnb .sub>li>a{
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background: #3b4f67;
+    color: #fff;
+}
+.container{
+    width: 800px;
+    height: 650px;
+    float: left;
+}
+.slide{
+    width: 100%;
+    height: 350px;
+    background: #d8d8d8;
+}
+.contents{
+    width: 100%;
+    height: 200px;
+    background: rgb(221, 207, 207);
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: #b3b3b3;
+}
