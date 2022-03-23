@@ -23,6 +23,7 @@ header{
     height: 650px;
     float: left;
     background: #ccd8e7;
+    z-index: 10;
 }
 header h1{
     width: 100%;
@@ -85,11 +86,30 @@ header nav .gnb .sub>li>a{
     width: 800px;
     height: 650px;
     float: left;
+    position: relative;
 }
 .slide{
     width: 100%;
     height: 350px;
     background: #d8d8d8;
+    overflow: hidden;
+    position: relative;
+}
+.slide>.slide_all, .slide>.slide_all>li{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.slide>.slide_all>li>a{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.slide>.slide_all>li>a>img{
+    width: 800px;
+    height: 350px;
 }
 .contents{
     width: 100%;
