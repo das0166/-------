@@ -14,5 +14,11 @@ $(document).ready(function(){
         }
         $(".slide>.slide_all>li").eq(slideI).siblings().animate({"left":"-800px"},500);
         $(".slide>.slide_all>li").eq(slideI).animate({"left":"0"},500);
-    },3000)
+    },3000);
+    $(".contents .not .notice>li").eq(0).click(function(){
+        $(".modal").fadeIn();
+    });
+    $(".btn").click(function(){
+        $(".modal").fadeOut();
+    });
 });
