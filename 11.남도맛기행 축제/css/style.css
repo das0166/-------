@@ -114,7 +114,90 @@ header nav .gnb .sub>li>a{
 .contents{
     width: 100%;
     height: 200px;
-    background: rgb(221, 207, 207);
+}
+.contents section{
+    float: left;
+}
+.contents section h2{
+    font-size: 18px;
+    background: #8ba3c0;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+.contents .not{
+    width: 300px;
+    height: 100%;
+}
+.contents .not .notice{
+    width: 100%;
+    height:175px;
+    margin-top: 3px;
+}
+.contents .not .notice>li{
+    font-size: 13px;
+    position: relative;
+    width:100%;
+    height: 28px;
+    line-height: 28px;
+}.contents .not .notice>li:hover>a{
+    background: #8ba3c0;
+}
+.contents .not .notice>li>a{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.contents .not .notice .day{
+    font-size: 10px;
+    position: absolute;
+    right: 1px;
+    top: 3px;
+}
+.contents .gal{
+    width: 300px;
+    height: 100%;
+}
+.contents .gal .gallery{
+    width: 100%;
+    height:175px;
+}
+.contents .gal .gallery>li{
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-top: 42px;
+    margin-left: 7px;
+}
+.contents .gal .gallery>li:hover>a{
+    opacity: .7;
+}
+.contents .gal .gallery>li>a{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.contents .gal .gallery>li>a>img{
+    width: 90px;
+    height: 90px;
+}
+.contents .sub_banner{
+    width: 200px;
+    height: 100%;
+}
+.contents .sub_banner h3{
+    width: 200px;
+    height: 100%;
+}
+.contents .sub_banner h3>a{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.contents .sub_banner h3>a>img{
+    width: 200px;
+    height: 200px;
 }
 footer{
     width: 100%;
