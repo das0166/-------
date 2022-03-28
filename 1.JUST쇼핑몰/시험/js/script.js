@@ -20,4 +20,10 @@ $(document).ready(function(){
         $(this).addClass("on");
         $(this).next("ul").addClass("on");
    });
+   $(".contents .no_gal .notice>li").eq(0).click(function(){
+        $(".modal").fadeIn();
+   });
+   $(".btn").click(function(){
+    $(".modal").fadeOut();
+   });
 });
