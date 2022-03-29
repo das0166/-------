@@ -1,0 +1,282 @@
+/* 주조 : #d1ff79 서브 : #027302*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    background: #fff;
+    color: #333;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+}
+.modal .modal_inner .tit{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.modal .modal_inner .nae{
+    padding: 20px;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    right: 20px;
+    bottom:20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background: #d1ff79;
+    z-index: 10;
+}
+header h1{
+    padding-top: 30px;
+    float: left;
+    height: 40px;
+    width: 200px;
+}
+header nav{
+    width: 700px;
+    padding-top: 50px;
+    float: right;
+}
+header nav .gnb_bg{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #027302;
+    display: none;
+}
+header nav .gnb{
+    width: 100%;
+    text-align: center;
+}
+header nav .gnb>li{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+header nav .gnb>li>a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    font-weight: bold;
+}
+header nav .gnb>li:hover>a{
+    background: #027302;
+    color: #fff;
+}
+header nav .gnb>li .sub{
+    width: 100%;
+    line-height: 40px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+}
+header nav .gnb>li .sub>li{
+    height: 40px;
+}
+header nav .gnb>li .sub>li:hover>a{
+    color: #333;
+    background: #d1ff79;
+}
+header nav .gnb>li .sub>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    color: #fff;
+    font-size: 18px;
+}
+.slide{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.slide .slide_all, .slide .slide_all>li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.contents{
+    width: 100%;
+    height: 200px;
+    
+}
+.contents section{
+    float: left;
+}
+.contents section h2{
+    width: 100px;
+    height: 30px;
+    background: #027302;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+.contents .notice{
+    width: 450px;
+    height: 100%;
+    
+}
+.contents .notice>ul{
+    width: 100%;
+    height: 170px;
+}
+.contents .notice>ul>li{
+    font-size: 15px;
+    position: relative;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+}
+.contents .notice .day{
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.contents .notice>ul>li:hover>a{
+    background: #027302;
+    color: #fff;
+}
+.contents .notice>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.contents .gal{
+    width : 400px;
+    height: 100%;
+}
+.contents .gal>ul{
+    width: 100%;
+    height: 170px;
+}
+.contents .gal>ul>li{
+    float: left;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+.contents .gal>ul>li:hover>a{
+    opacity: .7;
+}
+.contents .gal>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.contents .sub_banner{
+    width: 350px;
+    height: 100%;
+}
+.contents .sub_banner h1{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.contents .sub_banner a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: #e7e7e7;
+}
+footer h1{
+    padding-top: 30px;
+    float: left;
+    height: 40px;
+    width: 200px;
+}
+footer .copy{
+    width: 800px;
+    padding-top: 20px;
+    float: left;
+}
+footer .copy li{
+    float: left;
+    font-size: 14px;
+    padding-left: 5px;
+    color: #8b8b8b;
+}
+footer .fa{
+    width: 200px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+footer .fa h2{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+    width: 100%;
+    background: #027302;
+    color: #fff;
+}
+footer .fa ul{
+    width: 100%;
+    display: none;
+}
+footer .fa ul>li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #d1ff79;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+}
+footer .fa ul>li:hover>a{
+    background: #027302;
+    color: #fff;
+}
+footer .fa ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
