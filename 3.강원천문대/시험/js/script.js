@@ -15,4 +15,15 @@ $(document).ready(function(){
         $(".slide .slide_all>li").eq(slideI).siblings().fadeOut(500);
         $(".slide .slide_all>li").eq(slideI).fadeIn(500);
     },3000);
+   $(".contents .gal_no h2").click(function(){
+        $(".contents .gal_no h2, .contents .gal_no ul").removeClass("on");
+        $(this).addClass("on");
+        $(this).next("ul").addClass("on");
+   });
+   $(".contents .gal_no .notice>li").eq(0).click(function(){
+        $(".modal").fadeIn();
+   });
+   $(".btn").click(function(){
+        $(".modal").fadeOut();
+   });
 });
