@@ -1,1 +1,252 @@
 /* #6a4d4d - 주조색 #a67f7f - 보조색 #b3b3b3 - 그레이 #6c6c6c - 진한 그레이 */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    color: #333;
+    background: #fff;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: fixed;
+    display: none;
+}
+.modal .modal_inner{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border: 5px solid #997777;
+}
+.modal .modal_inner .tit{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid #9e9e9e;
+}
+.modal .modal_inner .nae{
+    padding: 20px;
+}
+.modal .modal_inner .btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+header{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    background: #b59999;
+    z-index: 10;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+header h1{
+    padding-top: 30px;
+    float: left;
+    width: 200px;
+    height: 40px;
+}
+header nav{
+    width: 700px;
+    float: right;
+    padding-top: 50px;
+}
+header nav .gnb{
+    width: 100%;
+    text-align: center;
+    
+}
+header nav .gnb>li{
+    width: 25%;
+    position: relative;
+    float: left;
+   
+}
+header nav .gnb>li:hover>a{
+    color: #fff;
+    background: #896b6b;
+    box-sizing: border-box;
+    border: 1px solid #b59999;
+}
+header nav .gnb>li>a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #997777;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+header nav .gnb .sub{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+header nav .gnb .sub>li{
+    width: 100%;
+    line-height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #b59999;
+    background: #fff;
+}
+header nav .gnb .sub>li:hover>a{
+    background: #896b6b;
+    color: #fff;
+}
+header nav .gnb .sub>li>a{
+    height: 40px;
+    width: 100%;
+    display: block;
+}
+.slide{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slide .slide_all, .slide .slide_all>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #b59999;
+}
+.contents{
+    width: 100%;
+    height: 200px;
+}
+.contents section{
+    float: left;
+}
+.contents section h2{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    background: #896b6b;
+    color: #fff;
+}
+.contents .notice{
+    width: 450px;
+    height: 100%;
+}
+.contents .notice ul{
+    width: 100%;
+    
+}
+.contents .notice ul>li{
+    position: relative;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+}
+.contents .notice ul>li:hover>a{
+    background: #997777;
+    color: #fff;
+}
+.contents .notice ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.contents .notice .day{
+    position: absolute;
+    right: 5px;
+    font-size: 11px;
+}
+.contents .gal{
+    width: 400px;
+    height: 100%;
+}
+.contents .gal ul{
+    width: 100%;
+}
+.contents .gal ul>li{
+    float: left;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.contents .gal ul>li:hover>a{
+    opacity: .7;
+}
+.contents .gal ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.contents .sub_banner{
+    width: 350px;
+    height: 100%;
+}
+.contents .sub_banner h1{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: #f1f1f1;
+}
+footer h1{
+    width: 200px;
+    height: 40px;
+    padding-top: 30px;
+    float: left;
+}
+footer .copy{
+    width: 700px;
+    padding-top: 14px;
+    float: left;
+}
+footer .copy>li{
+    font-size: 13px;
+    color: #9e9e9e;
+    float: left;
+    padding-left: 10px;
+}
+footer .sns{
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+footer .sns>li{
+    width: 32%;
+    float: left;
+    margin-top: 7px;
+    text-align: center;
+}
+footer .sns>li:hover>a{
+    border-bottom: 1px solid #997777;
+}
+footer .sns>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+footer .sns>li>a>img{
+    width: 80px;
+    height: 80px;
+}
