@@ -1,1 +1,305 @@
 /* #5b9d69 - 주조색 #4ed96c - 보조색 #b3b3b3 - 그레이 #6c6c6c - 진한 그레이*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    color: #333;
+    background: #fff;
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, .7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+}
+.modal .modal_inner .tit{
+    font-size: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #888888;
+    font-weight: bold;
+}
+.modal .modal_inner .nae{
+    padding: 20px;
+}
+.modal .modal_inner .btn{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    position: relative;
+}
+header .container{
+    position: relative;
+}
+header h1{
+    width: 200px;
+    height: 40px;
+    float: left;
+    padding-top: 30px;
+}
+header nav{
+    width: 700px;
+    float: right;
+    padding-top: 50px;
+
+}
+header nav .nav_bg{
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: #217848;
+    display: none;
+}
+header nav .gnb{
+    width: 100%;
+    text-align: center;
+}
+header nav .gnb>li{
+    width: 25%;
+    position: relative;
+    float: left;
+}
+header nav .gnb>li:hover>a{
+    color: #fff;
+    background: #217848;
+}
+header nav .gnb>li>a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    display: block;
+    
+}
+header nav .gnb .sub{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+header nav .gnb .sub>li{
+    width: 100%;
+    line-height: 40px;
+}
+header nav .gnb .sub>li:hover>a{
+    background: #fff;
+    color: #333;
+}
+header nav .gnb .sub>li>a{
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    display: block;
+    color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.slide{
+    width: 100%;
+    height: 300px;
+    background: #e2c3c3;
+    position: relative;
+    overflow: hidden;
+}
+.slide .slide_all,.slide .slide_all>li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contents{
+    width: 100%;
+    height: 200px;
+}
+.contents section{
+    float: left;
+}
+.contents section h2{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    background: #217848;
+    color: #fff;
+}
+.contents .notice{
+    width: 450px;
+    height: 100%;
+    float: left;
+}
+.contents .notice ul{
+    width: 100%;
+}
+.contents .notice ul>li{
+    width:100%;
+    position:relative;
+}
+.contents .notice ul>li:hover>a{
+    background: #217848;
+    color: #fff;
+}
+.contents .notice ul>li>a{
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+    display: block;
+}
+.contents .notice .day{
+    position: absolute;
+    right: 5px;
+    font-size: 12px;
+}
+.contents .gal{
+    width: 400px;
+    height: 100%;
+    float: left;
+}
+.contents .gal ul{
+   width: 100%;
+   margin-top: 35px;
+
+}
+.contents .gal ul>li{
+    float: left;
+    margin-left: 25px;
+}
+.contents .gal ul>li:hover>a{
+    opacity: .7;
+}
+.contents .gal ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.contents .sub_banner{
+    width: 350px;
+    height: 100%;
+    float: left;
+}
+.contents .sub_banner h1{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background: #eeeeee;
+
+}
+footer .container{
+    position: relative;
+}
+footer .fo_me{
+    width: 900px;
+    height: 40px;
+    float: left;
+}
+footer .fo_me>ul{
+    width: 100%;
+}
+footer .fo_me>ul>li{
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+footer .fo_me>ul>li:hover>a{
+    font-weight: bold;
+}
+footer .fo_me>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+footer .fo_copy{
+    width: 900px;
+    height: 60px;
+    float: left;
+}
+footer .fo_copy>ul{
+    width: 100%;
+}
+footer .fo_copy>ul>li{
+    float: left;
+    font-size: 11px;
+    color: #888888;
+    padding-right: 10px;
+}
+footer .right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: left;
+    width: 300px;
+}
+footer .right h2{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: #217848;
+    color: #fff;
+    cursor: pointer;
+}
+footer .right ul{
+    width: 100%;
+    display: none;
+}
+footer .right ul>li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #eeeeee;
+    background: #fff;
+}
+footer .right ul>li:hover>a{
+    background: #217848;
+    color: #fff;
+}
+footer .right ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
